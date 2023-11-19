@@ -1,14 +1,17 @@
 <p>clientes works!</p>
 
 <div class="container">
-  <div class="form">
-    <div>
-      <label for="nombre"><h2>nombre:</h2></label>
-      <input type="text" name="nombre" />
-    </div>
-    <div>
-      <label for="email"><h2>email:</h2></label>
-      <input type="email" name="email" />
-    </div>
-  </div>
+  <h5>cliente 1</h5>
+  <p>nombre: {{ cliente1.nombre }}</p>
+  <p>direccion: {{ cliente1.direccion }}</p>
+  <p>cuit: {{ cliente1.cuit }}</p>
+  <p>proveedor: {{ cliente1.proveedor }}</p>
+  <br>
+  <h5>cliente 2</h5>
+  <p>nombre: {{ cliente2.nombre }}
+    <button (click) = "cambiarNombre()">cambiar nombre</button>
+  </p>
+  <p>direccion: {{ cliente2.direccion }}</p>
+  <p>cuit: {{ cliente2.cuit }}</p>
+  <p>proveedor: {{ cliente2.proveedor }}</p>
 </div>
