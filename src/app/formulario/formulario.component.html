@@ -1,0 +1,42 @@
+<div class="container">
+  <div class="form-control mt-2">
+    <div class="col">
+      <div class="row">
+        <!-- #name (variable de plantilla) -->
+        <label for="nombre">nombre</label>
+        <input type="text" id="nombre" placeholder="ingresa tu nombre" #name />
+      </div>
+      <div class="row">
+        <!-- #telefono (variable de plantilla) -->
+        <label for="telefono">telefono</label>
+        <input
+          type="string"
+          id="telefono"
+          placeholder="011-00000000"
+          #telefono
+        />
+      </div>
+    </div>
+  </div>
+  <button
+    class="btn btn-primary mt-2"
+    (click)="mostrarEnConsola(name.value, telefono.value)"
+  >
+    mostrar en consola
+  </button>
+
+  <div class="alert alert-danger mt-4">
+    <p></p>
+  </div>
+
+  <div class="alert alert-primary mt-4" *ngIf="openAlert; else mensaje">
+    <p>the message has been sent !!!</p>
+    <button class="btn btn-success" (click)="openAlert = false">
+      close alert
+    </button>
+  </div>
+
+  <ng-template #mensaje>
+    <div class="alert alert-danger mt-4">no parameters recieved (alert)</div>
+  </ng-template>
+</div>

@@ -14,7 +14,6 @@ export class ContadorComponent {
   persona:Persona = {
     nombre: 'Mariano Alfonso',
     edad: 51,
-    funcion: 'developer'
   };
   
   curso:Curso = {

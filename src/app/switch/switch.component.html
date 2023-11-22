@@ -1,0 +1,15 @@
+seleccione dia de la semana: 
+<button (click) = "decrement()">-</button>
+{{ dia }}
+<button (click) = "increment()">+</button>
+
+<div [ngSwitch] = "dia">
+    <span *ngSwitchCase = "1">lunes</span>
+    <span *ngSwitchCase = "2">martes</span>
+    <span *ngSwitchCase = "3">miercoles</span>
+    <span *ngSwitchCase = "4">jueves</span>
+    <span *ngSwitchCase = "5">viernes</span>
+    <span *ngSwitchCase = "6">sabado</span>
+    <span *ngSwitchCase = "7">domingo</span>
+    <span *ngSwitchDefault>valor no valido</span>
+</div>

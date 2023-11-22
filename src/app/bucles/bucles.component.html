@@ -1,0 +1,13 @@
+<ul>
+    <li *ngFor="let persona of personas; let i = index">
+        <div>
+            Indice: {{ i+1 }}
+        </div>
+        <div>
+            Nombre: {{ persona.nombre }}
+        </div>
+        <div>
+            Edad: {{ persona.edad }}
+        </div>
+    </li>
+</ul>
